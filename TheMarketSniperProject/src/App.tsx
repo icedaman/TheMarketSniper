@@ -5,6 +5,7 @@ import JobsLogo from './assets/jobs_thumbnail.jpg'
 import MeetingTimeLogo from './assets/meeting_time_thumbnail.jpg'
 import ReviewTimeLogo from './assets/time_for_review_thumbnail.jpg'
 import BTCLogo from './assets/btc_thumbnail.jpg'
+import Card1 from './ReusableComponents/Card1'
 
 export default function App() {
   return (
@@ -13,47 +14,15 @@ export default function App() {
         <div className='w-1/4'>
           <img src={TMSLogo} height='100px' />
         </div>
-        
         <div className="grid grid-cols-3 gap-10  mt-4 mb-4 mx-auto py-10">
-
-          <div className="h-fit	 w-3/3 hover:animate-pulse bg-green- p-3"> 
-            <h1 className='text-4xl text-green-400 text-center py-4 capitalize font-bold'>Live Trading days</h1>   
-            <img src={TradingDaysLogo} />
-            <h4 className='capitalize text-white text-clip overflow-hidden text-2xl text-center py-4'> Join Francis and the Sniper Community in a Live Session</h4>
-          </div>
-          <div className="w-3/3 hover:animate-pulse">    
-            <h1 className='text-4xl text-green-400 text-center py-4 capitalize font-bold'>stream archives</h1>   
-            <img src={MarketsLogo} />
-            <h4 className='capitalize text-white text-clip overflow-hidden text-2xl text-center py-4'>Watch Previous Streams </h4>
-          </div>
-          <div className="w-3/3 hover:animate-pulse">    
-            <h1 className='text-4xl text-green-400 text-center py-4 capitalize font-bold'>sunday sessions</h1>   
-            <img src={MeetingTimeLogo} />
-            <h4 className='capitalize text-white text-clip overflow-hidden text-2xl text-center py-4'>join in our sunday market analysis session </h4>
-          </div>
-          <div className="w-3/3 hover:animate-pulse">    
-            <h1 className='text-4xl text-green-400 text-center py-4 capitalize font-bold'>forex and equities</h1>   
-            <img src={JobsLogo} />
-            <h4 className='capitalize text-white text-clip overflow-hidden text-2xl text-center py-4'>Forex and Equities focused Live Session</h4>
-          </div>
-          <div className="w-3/3 hover:animate-pulse">    
-            <h1 className='text-4xl text-green-400 text-center py-4 capitalize font-bold'>crypto findings</h1>   
-            <img src={BTCLogo} />
-            <h4 className='capitalize text-white text-clip overflow-hidden text-2xl text-center py-4'>crypto focused Live Session </h4>
-          </div>
-          <div className="w-3/3 hover:animate-pulse">    
-            <h1 className='text-4xl text-green-400 text-center py-4 capitalize font-bold'>post mortem</h1>   
-            <img src={ReviewTimeLogo} />
-            <h4 className='capitalize text-white text-clip overflow-hidden text-2xl text-center py-4'>extracting the lessons from past wins & losses </h4>
-          </div>
-
+          <Card1 title={"live trading days"} image={TradingDaysLogo} description={"Join Francis and the Sniper Community in a Live Session"} />
+          <Card1 title={"stream archives"} image={MarketsLogo} description={"Watch Previous Streams"} />
+          <Card1 title={"sunday sessions"} image={MeetingTimeLogo} description={"join in our sunday market analysis session"} />
+          <Card1 title={"forex and equities"} image={JobsLogo} description={"Forex and Equities focused Live Session"} />
+          <Card1 title={"crypto findings"} image={BTCLogo} description={"crypto focused Live Session"} />
+          <Card1 title={"post mortem"} image={ReviewTimeLogo} description={"extracting the lessons from past wins & losses"} />
         </div>
       </div>
-        <div>
-          <button className="px-5 py-5 bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ...">
-            Save changes
-          </button>
-        </div>
     </div>
   )
 }
