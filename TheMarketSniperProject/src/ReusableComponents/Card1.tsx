@@ -1,10 +1,10 @@
 
 export default function Card1({ title, image, description} ) {
   return (
-    <div className="h-fit w-3/3 hover:animate-pulse">    
-    <h1 className='text-4xl text-green-400 text-center py-4 capitalize font-bold'>{title}</h1>   
-    <img src={image} />
-    <h4 className='capitalize text-white text-clip overflow-hidden text-2xl text-center px-2 py-4'>{description}</h4>
-  </div>
+    <div className="w-3/3 hover:shadow-[0_0_30px_green] rounded-lg duration-300 bg-gray-900">    
+      <h1 className='text-3xl text-green-400 text-center py-6 capitalize font-bold'>{title}</h1>   
+      <img src={image} />
+      <h4 className='capitalize text-white text-clip overflow-hidden text-1xl text-center px-2 py-4'>{description}</h4>
+    </div>
   )
 }
