@@ -10,24 +10,27 @@ export default function App() {
   return (
     <div className="bg-black">
       <div className="w-full min-h-screen container mx-auto py-9 bg-black">
-        <img src={TMSLogo} />
+        <div className='w-1/4'>
+          <img src={TMSLogo} height='100px' />
+        </div>
+        
         <div className="grid grid-cols-3 gap-10 bg-green- h-screen mt-4 mb-4 max-h-0 mx-auto py-9"> 
-          <div className="w-3/3 bg-indigo-700 hover:bg-sky-700 ">    
+          <div className="w-3/3 bg-indigo-700 hover:bg-sky-700 hover:animate-pulse">    
             <img src={TradingDaysLogo} />
           </div>
-          <div className="w-3/3 bg-indigo-700 hover:bg-sky-700 ">    
+          <div className="w-3/3 bg-indigo-700 hover:bg-sky-700 hover:animate-pulse">    
             <img src={MarketsLogo} />
           </div>
-          <div className="w-3/3 bg-indigo-700 hover:bg-sky-700 ">    
+          <div className="w-3/3 bg-indigo-700 hover:bg-sky-700 hover:animate-pulse">    
             <img src={JobsLogo} />
           </div>
-          <div className="w-3/3 bg-indigo-700 hover:bg-sky-700 ">    
+          <div className="w-3/3 bg-indigo-700 hover:bg-sky-700 hover:animate-pulse">    
             <img src={MeetingTimeLogo} />
           </div>
-          <div className="w-3/3 bg-indigo-700 hover:bg-sky-700 ">    
+          <div className="w-3/3 bg-indigo-700 hover:bg-sky-700 hover:animate-pulse">    
             <img src={BTCLogo} />
           </div>
-          <div className="w-3/3 bg-indigo-700 hover:bg-sky-700 ">    
+          <div className="w-3/3 bg-indigo-700 hover:bg-sky-700 hover:animate-pulse">    
             <img src={ReviewTimeLogo} />
           </div>
         </div>
