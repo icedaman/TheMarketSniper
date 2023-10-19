@@ -1,33 +1,21 @@
-import { useState } from 'react'
 
-
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <div className="mx-96">
-      <h1 className='text-sky-400/100 text-5xl'>Search</h1>
-      <input className="border-4 py-2 px-8 mt-6 rounded-lg border-green-600" />
-
-      <div className="flex flex-row text-sky-400/100 mt-16 mb-6 border-4 border-rose-500 text-left text-2xl">
-        <div className="basis-1/4 md:basis-1/5 w-48 py-4 px-4"><p>#</p></div>
-        <div className="basis-1/4 md:basis-2/5 w-48 py-4 px-4"><p>Name</p></div>
-        <div className="basis-1/2 md:basis-2/5 w-48 py-4 px-4"><p>Symbol</p></div>
-        <div className="basis-1/2 md:basis-2/5 w-48 py-4 px-4"><p>Price</p></div>
-        <div className="basis-1/2 md:basis-2/5 w-48 py-4 px-4"><p>ATH</p></div>
+    <div className="w-full min-h-screen container mx-auto py-4 bg-yellow-300">
+      <button className="px-5 py-5 bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ...">
+        Save changes
+      </button>
+      <div className="grid grid-cols-3 gap-4 bg-green-600 mx-70 h-screen mt-4 mb-4"> 
+        <div className="w-3/3 bg-indigo-700 hover:bg-sky-700">1</div>
+        <div className="w-3/3 bg-indigo-700">2</div>
+        <div className="w-3/3 bg-indigo-700">3</div>
+        <div className="w-3/3 bg-indigo-700">4</div>
+        <div className="w-3/3 bg-indigo-700 dark:md:hover:bg-fuchsia-600 ">5</div>
+        <div className="w-3/3 bg-indigo-700">6</div>
+        <div className="w-3/3 bg-indigo-700">7</div>
+        <div className="w-3/3 bg-indigo-700">8</div>
+        <div className="w-3/3 bg-indigo-700">9</div>
       </div>
-
-      <div className="flex flex-row text-slate-100 border-4 border-lime-500 text-left text-2xl">
-        <div className="basis-1/4 md:basis-1/5 w-48 py-4 px-4"><p>6</p></div>
-        <div className="basis-1/4 md:basis-2/5 w-48 py-4 px-4"><p>Cardano</p></div>
-        <div className="basis-1/2 md:basis-2/5 w-48 py-4 px-4"><p>ADA</p></div>
-        <div className="basis-1/2 md:basis-2/5 w-48 py-4 px-4"><p>0.28 $</p></div>
-        <div className="basis-1/2 md:basis-2/5 w-48 py-4 px-4"><p>3.10 $</p></div>
-      </div>
-
-      
     </div>
   )
 }
-
-export default App
