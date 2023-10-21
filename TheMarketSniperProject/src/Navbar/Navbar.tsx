@@ -10,11 +10,11 @@ const navigation = [
   { name: 'Sniper Circle', href: '#', current: false },
 ]
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Navbar() {
   return (
     <Disclosure as="nav" className=" ">
       {({ open }) => (
@@ -125,7 +125,6 @@ export default function Example() {
                   <span className="sr-only text-pink-400">View notifications</span>
                   <BellIcon className="h-10 w-10" aria-hidden="true" />
                 </button>
-
               </div>
             </div>
           </div>
