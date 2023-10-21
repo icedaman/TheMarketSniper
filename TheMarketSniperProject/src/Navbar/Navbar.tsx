@@ -59,18 +59,10 @@ export default function Example() {
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 mt-36 mr-20">
-                <button
-                  type="button"
-                  className="relative rounded-full bg-black p-1 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 focus:ring-offset-green-800"
-                >
-                  <span className="absolute -inset-1.5" />
-                  <span className="sr-only text-pink-400">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button>
-
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 mt-36 mr-12">
+                
                 {/* Profile dropdown */}
-                <Menu as="div" className="relative ml-4">
+                <Menu as="div" className="relative mr-6">
                   <div>
                     <Menu.Button className="relative flex rounded-full bg-green-800 text-sm focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 focus:ring-offset-green-800">
                       <span className="absolute -inset-1.5" />
@@ -125,6 +117,15 @@ export default function Example() {
                     </Menu.Items>
                   </Transition>
                 </Menu>
+                <button
+                  type="button"
+                  className="relative rounded-full bg-black p-1 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 focus:ring-offset-green-800"
+                >
+                  <span className="absolute -inset-1.5" />
+                  <span className="sr-only text-pink-400">View notifications</span>
+                  <BellIcon className="h-6 w-6" aria-hidden="true" />
+                </button>
+
               </div>
             </div>
           </div>
