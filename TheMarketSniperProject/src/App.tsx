@@ -18,7 +18,7 @@ export default function App() {
         </div>
         <div className="grid grid-cols-3 gap-10  mt-4 mb-4 mx-auto py-10">
           <Card2 />
-          <Card1 title={"live trading days"} image={TradingDaysLogo} description={"Join Francis and the Sniper Community in a Live Session"} />
+          <Card1 title={"live trading days"} image={TradingDaysLogo} description={"Join Francis & the Sniper Community in a Live Session"} />
           <Card1 title={"stream archives"} image={MarketsLogo} description={"Watch Previous Streams"} />
           <Card1 title={"sunday sessions"} image={MeetingTimeLogo} description={"join in our sunday market analysis session"} />
           <Card1 title={"forex and equities"} image={JobsLogo} description={"Forex and Equities focused Live Session"} />
