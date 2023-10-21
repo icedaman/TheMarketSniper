@@ -64,11 +64,11 @@ export default function Example() {
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative mr-6">
                   <div>
-                    <Menu.Button className="relative flex rounded-full bg-green-800 text-sm focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 focus:ring-offset-green-800">
+                    <Menu.Button className="hover:border-2 border-green-500 relative flex rounded-full bg-green-800 text-sm focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 focus:ring-offset-green-800">
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">Open user menu</span>
                       <img
-                        className="h-8 w-8 rounded-full"
+                        className="h-12 w-12 rounded-full"
                         src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                         alt=""
                       />
@@ -119,11 +119,11 @@ export default function Example() {
                 </Menu>
                 <button
                   type="button"
-                  className="relative rounded-full bg-black p-1 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 focus:ring-offset-green-800"
+                  className="hover:border-2 border-green-500 relative rounded-full bg-black p-1 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 focus:ring-offset-green-800"
                 >
                   <span className="absolute -inset-1.5" />
                   <span className="sr-only text-pink-400">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
+                  <BellIcon className="h-10 w-10" aria-hidden="true" />
                 </button>
 
               </div>
