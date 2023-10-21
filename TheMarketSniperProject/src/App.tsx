@@ -7,15 +7,17 @@ import ReviewTimeLogo from './assets/time_for_review_thumbnail.jpg'
 import BTCLogo from './assets/btc_thumbnail.jpg'
 import Card1 from './ReusableComponents/Card1'
 import Card2 from './ReusableComponents/Card2'
+import Navbar from './Navbar/Navbar'
 
 
 export default function App() {
   return (
     <div className="bg-black">
+      <Navbar />
       <div className="w-full min-h-screen container mx-auto py-9 bg-transparent">
-        <div className='w-1/4'>
+        {/* <div className='w-1/4'>
           <img src={TMSLogo} height='100px' />
-        </div>
+        </div> */}
         <div className="grid grid-cols-3 gap-10  mt-4 mb-4 mx-auto py-10">
           <Card2 />
           <Card1 title={"live trading days"} image={TradingDaysLogo} description={"Join Francis & the Sniper Community in a Live Session"} />
