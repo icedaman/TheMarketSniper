@@ -1,4 +1,4 @@
-import HVFLogo from '.././assets/BullVsBearWallpaper.jpg'
+import HVFLogo from '.././assets/BullVsBearWallpaper2.jpg'
 
 export default function CardHVF( ) {
   return (
