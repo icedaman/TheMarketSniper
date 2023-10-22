@@ -7,7 +7,7 @@ export default function CardHVF( ) {
       <div className=''>
         <img src={HVFLogo} className='w-11/12 m-auto' />
       </div>
-      <h4 className='py-20 px-8 font-semibold capitalize text-white text-clip overflow-hidden text-2xl text-center'>{'HVF method course'}</h4>
+      <h4 className='pt-16 pr-8 pb-20 pl-8 font-semibold capitalize text-white text-clip overflow-hidden text-2xl text-center'>{'HVF method course'}</h4>
     </div>
   )
 }
