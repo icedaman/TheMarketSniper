@@ -33,7 +33,7 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="lg:mt-40 lg:my-5 flex flex-1  justify-center sm:items-stretch sm:justify-start md:items-center lg:items-center">
+              <div className="lg:mt-28 lg:my-5 flex flex-1  justify-center sm:items-stretch sm:justify-start md:items-center lg:items-center">
                 <div className="flex flex-shrink-0 items-center ">
                   <img
                     className="h-32 w-auto cursor-pointer"
@@ -59,7 +59,7 @@ export default function Navbar() {
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 mt-36 mr-12">
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 mt-28 mr-12">
                 
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative mr-6">
