@@ -3,6 +3,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import TMSLogo from '../assets/Web2-Logo-120TMS.png'
 import { Link } from 'react-router-dom'
+import FrancisAvatar from '../assets/francisAvatar.jpg'
 
 const navigation = [
   { name: 'Library', href: '#', current: true },
@@ -72,7 +73,7 @@ export default function Navbar() {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-12 w-12 rounded-full"
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        src={FrancisAvatar}
                         alt=""
                       />
                     </Menu.Button>
