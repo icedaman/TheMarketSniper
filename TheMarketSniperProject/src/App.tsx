@@ -2,6 +2,9 @@ import Navbar from './Navbar/Navbar'
 import { Routes, Route } from 'react-router-dom'
 import Library from './pages/Library'
 import LiveTradingSessions from './pages/LiveTradingSessions'
+import SundaySessions from './pages/SundaySessions'
+import CryptoFindings from './pages/CryptoFindings'
+import ForexAndEquities from './pages/ForexAndEquities'
 
 export default function App() {
   return (
@@ -10,6 +13,9 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Library />} />
         <Route path='/live-sessions' element={<LiveTradingSessions />} />
+        <Route path='/sunday-sessions' element={<SundaySessions />} />
+        <Route path='/forex-equities' element={<ForexAndEquities />} />
+        <Route path='/crypto-findings' element={<CryptoFindings />} />
       </Routes>
     </div>
   )

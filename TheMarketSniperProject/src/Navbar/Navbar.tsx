@@ -2,6 +2,7 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import TMSLogo from '../assets/Web2-Logo-120TMS.png'
+import { Link } from 'react-router-dom'
 
 const navigation = [
   { name: 'Library', href: '#', current: true },
@@ -33,32 +34,34 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="lg:mt-28 lg:my-5 flex flex-1  justify-center lg:place-content-around sm:items-stretch sm:justify-start md:items-center lg:items-center">
-                <div className="flex flex-shrink-0 items-center ">
-                  <img
-                    className="h-32 w-auto cursor-pointer"
-                    src={TMSLogo}
-                    alt="The Market Sniper"
-                  />
-                </div>
-                <div className="lg:ml-96 hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current ? 'bg-green-900 text-white text-xl' : 'text-white hover:bg-green-700 hover:text-white text-xl',
-                          'rounded-md px-3 py-2 text-sm font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
-                    ))}
+              <Link to={'/'}>
+                <div className="lg:mt-28 lg:my-5 flex flex-1  justify-center lg:place-content-around sm:items-stretch sm:justify-start md:items-center lg:items-center">
+                  <div className="flex flex-shrink-0 items-center ">
+                    <img
+                      className="h-32 w-auto cursor-pointer"
+                      src={TMSLogo}
+                      alt="The Market Sniper"
+                    />
+                  </div>
+                  <div className="lg:ml-96 hidden sm:ml-6 sm:block">
+                    <div className="flex space-x-4">
+                      {navigation.map((item) => (
+                        <a
+                          key={item.name}
+                          href={item.href}
+                          className={classNames(
+                            item.current ? 'bg-green-900 text-white text-xl' : 'text-white hover:bg-green-700 hover:text-white text-xl',
+                            'rounded-md px-3 py-2 text-sm font-medium'
+                          )}
+                          aria-current={item.current ? 'page' : undefined}
+                        >
+                          {item.name}
+                        </a>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 mt-28 mr-12">
                 
                 {/* Profile dropdown */}

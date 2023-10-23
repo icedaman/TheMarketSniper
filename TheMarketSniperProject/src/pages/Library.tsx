@@ -8,7 +8,9 @@ export default function Library() {
   return (
     <div className="w-full min-h-screen container mx-auto py-9 bg-transparent">
       <div className="grid grid-cols-3 gap-10  mt-4 mb-4 mx-auto py-36">
-        <CardGeneric title={"HVF method"} image={HVFLogo} description={"HVF method course"} />
+        <Link to={"https://the-market-sniper.mykajabi.com/products/hvf-method-revealed"}>
+          <CardGeneric title={"HVF method"} image={HVFLogo} description={"HVF method course"} />
+        </Link>
         <Link to={"/live-sessions"}>
           <CardGeneric title={"live trading days"} image={TradingDaysLogo} description={"Join Francis & the Sniper Community in a Live Session"} />
         </Link>
