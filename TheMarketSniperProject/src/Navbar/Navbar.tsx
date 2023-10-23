@@ -33,7 +33,7 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="lg:mt-28 lg:my-5 flex flex-1  justify-center sm:items-stretch sm:justify-start md:items-center lg:items-center">
+              <div className="lg:mt-28 lg:my-5 flex flex-1  justify-center lg:place-content-around sm:items-stretch sm:justify-start md:items-center lg:items-center">
                 <div className="flex flex-shrink-0 items-center ">
                   <img
                     className="h-32 w-auto cursor-pointer"
