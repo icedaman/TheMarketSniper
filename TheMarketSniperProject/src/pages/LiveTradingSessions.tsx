@@ -8,7 +8,7 @@ export default function LiveTradingSessions() {
   return (
     <div className="w-full min-h-screen container mx-auto py-9 bg-transparent">
       <Link to={"/"}>
-        <button className="text-green-500 p-8 bg-zinc-900 rounded-2xl absolute mt-12">Back</button>
+        <button className="text-green-500 px-12 py-6 bg-zinc-900 rounded-2xl absolute mt-12">Back</button>
       </Link>  
       <div className="grid grid-cols-3 gap-10  mt-4 mb-4 mx-auto py-36">
         <Link to={"/sunday-sessions"}>

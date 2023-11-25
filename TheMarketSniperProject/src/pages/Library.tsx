@@ -14,7 +14,9 @@ export default function Library() {
         <Link to={"/live-sessions"}>
           <CardGeneric title={"live trading days"} image={TradingDaysLogo} description={"Join Francis & the Sniper Community in a Live Session"} />
         </Link>
-        <CardGeneric title={"stream archives"} image={MarketsLogo} description={"Watch Previous Streams"} />
+        <Link to={"/stream-archives"}>
+          <CardGeneric title={"stream archives"} image={MarketsLogo} description={"Watch Previous Streams"} />
+        </Link>
       </div>
   </div>
   )
