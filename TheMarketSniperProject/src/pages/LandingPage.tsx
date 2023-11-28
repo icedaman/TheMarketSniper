@@ -41,6 +41,13 @@ export default function LandingPage() {
           </div>
         </div>
 
+        <div className='absolute text-center w-full '>
+          <button className='bg-green-500 my-5 text-white text-center w-80 h-16 rounded-2xl shadow-green-900  hover:shadow-lg hover:transition duration-500 ease-in-out shadow-2xl hover:shadow-green-900 hover:bg-green-600 hover:w-96 text-lg hover:text-xl '>
+            Book a Call
+          </button>
+        </div>
+
+        
         
       </div>
   )
