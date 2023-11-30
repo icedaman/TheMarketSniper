@@ -18,7 +18,7 @@ function classNames(...classes: string[]) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className=" ">
+    <Disclosure as="nav" className="sticky top-0">
       {({ open }) => (
         <>
           <div className="bg-yellow flex-col justify-around flex items-stretch mx-auto w-5/6 px-0 sm:px-6 lg:px-0 h-32 ">
@@ -39,7 +39,7 @@ export default function Navbar() {
                 <div className="lg:mt-28 lg:my-5 flex flex-1  justify-center lg:place-content-around sm:items-stretch sm:justify-start md:items-center lg:items-center">
                   <div className="flex flex-shrink-0 items-center ">
                     <img
-                      className="h-32 w-auto cursor-pointer"
+                      className="h-28 w-auto cursor-pointer"
                       src={TMSLogo}
                       alt="The Market Sniper"
                     />
@@ -66,7 +66,7 @@ export default function Navbar() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 mt-28 mr-12">
                 
                 {/* Profile dropdown */}
-                <Menu as="div" className="relative mr-6">
+                {/* <Menu as="div" className="relative mr-6">
                   <div>
                     <Menu.Button className="hover:border-2 border-green-500 relative flex rounded-full bg-green-800 text-sm focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 focus:ring-offset-green-800">
                       <span className="absolute -inset-1.5" />
@@ -120,15 +120,16 @@ export default function Navbar() {
                       </Menu.Item>
                     </Menu.Items>
                   </Transition>
-                </Menu>
-                <button
+                </Menu> */}
+                {/* BELL BTN */}
+                {/* <button
                   type="button"
                   className="hover:border-2 border-green-500 relative rounded-full bg-black p-1 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 focus:ring-offset-green-800"
                 >
                   <span className="absolute -inset-1.5" />
                   <span className="sr-only text-pink-400">View notifications</span>
                   <BellIcon className="h-10 w-10" aria-hidden="true" />
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
