@@ -76,6 +76,15 @@ export default function LandingPage() {
     <div className='w-2/3 mx-auto py-2 bg-zinc-300'>
       <img src={FeaturedInLogo} />
     </div>
+    
+      
+    <div className='w-full mx-auto py-6 bg-zinc-900 text-center'>
+      <a className='text-zinc-300 font-semibold transition-all ease-in-out hover:border-b-4 px-7 text-lg hover:text-xl' href='#'>Blog</a>
+      <a className='text-zinc-300 font-semibold transition-all ease-in-out hover:border-b-4 px-7 text-lg hover:text-xl' href='#'>Press Mentions</a>
+      <a className='text-zinc-300 font-semibold transition-all ease-in-out hover:border-b-4 px-7 text-lg hover:text-xl' href='#'>Contact Us</a>
+      <a className='text-zinc-300 font-semibold transition-all ease-in-out hover:border-b-4 px-7 text-lg hover:text-xl' href='#'>Terms of Service</a>
+      <a className='text-zinc-300 font-semibold transition-all ease-in-out hover:border-b-4 px-7 text-lg hover:text-xl' href='#'>Privacy Policy</a>
+    </div>
 
  
      
