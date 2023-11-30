@@ -4,16 +4,14 @@ import TMSLogo from '../assets/Web2-Logo-120TMS.png'
 import TradingDaysLogo from '../assets/trading_days_banner.jpg'
 import MarketsLogo from '../assets/markets_thumbnail.jpg'
 import HVFLogo from '../assets/BullVsBearWallpaper.jpg'
-import StateOfMarketLogo from '../assets/state-of-market.png'
-import OptEntryLogo from '../assets/optimum-entry.png'
-import MinLossLogo from '../assets/min-stop-loss.png'
-import TakeProfitLogo from '../assets/take-profit.png'
-import MaxRRRLogo from '../assets/main-logo.png'
 import MainLogo from '../assets/main-logo.png'
 import SmallCard from '../ReusableComponents/SmallCard'
 import { TrophyIcon, AcademicCapIcon, UsersIcon, LockClosedIcon, LockOpenIcon, ChartBarSquareIcon, PhoneIcon } from '@heroicons/react/24/outline'
 import Navbar from '../Navbar/Navbar'
 import Tabs from '../ReusableComponents/Tabs'
+import FrancisDetails from './FrancisDetails'
+import FeaturedInLogo from '../assets/featuredIn.png'
+
 
 export default function LandingPage() {
   return (
@@ -49,32 +47,35 @@ export default function LandingPage() {
         <div className='w-1/2 mx-auto my-4 flex text-center'>
           <div className='w-1/2 mr-20 rounded-lg'>
             <button className='relative  bg-zinc-700 my-5 text-white text-center w-72 h-14 rounded-3xl shadow-zinc-900  hover:shadow-lg hover:transition duration-500 ease-in-out shadow-2xl hover:shadow-zinc-900 hover:bg-zinc-600 hover:w-80 text-lg hover:text-xl '>
-              Free Trading Course <ChartBarSquareIcon aria-hidden="true"className="h-8 cursor-pointer absolute top-3 right-4" />
+              <p className=' mr-5'>Free Trading Course</p> <ChartBarSquareIcon aria-hidden="true"className="h-8 cursor-pointer absolute top-3 right-4" />
             </button>
           </div>
           <div className='w-1/2 rounded-lg'>
             <button className='relative  bg-zinc-700 my-5 text-white text-center w-72 h-14 rounded-3xl shadow-zinc-900  hover:shadow-lg hover:transition duration-500 ease-in-out shadow-2xl hover:shadow-zinc-900 hover:bg-zinc-600 hover:w-80 text-xl hover:text-2xl '>
-              Results <TrophyIcon aria-hidden="true"className="h-8 cursor-pointer absolute top-3 right-12" />
+              <p className=' mr-5'>Results</p> <TrophyIcon aria-hidden="true"className="h-8 cursor-pointer absolute top-3 right-12" />
             </button>
           </div>
         </div>
         <div className='  w-1/4 mx-auto my-4 text-center'>
           <button className='relative bg-green-500 my-5 text-white text-center w-72 h-14 rounded-3xl shadow-green-900  hover:shadow-lg hover:transition duration-500 ease-in-out shadow-2xl hover:shadow-green-900 hover:bg-green-600 hover:w-80 text-lg hover:text-xl '>
-            Book a Free Call <PhoneIcon aria-hidden="true"className="h-8 cursor-pointer absolute top-3 right-7" />
+            <p className=' mr-5'>Book a Free Call</p> <PhoneIcon aria-hidden="true"className="h-8 cursor-pointer absolute top-3 right-7" />
           </button>
         </div>
       </div>  
 
+      <FrancisDetails />
 
-
-        <Tabs />
-
-        <div className='text-center w-full '>
-          <button className='relative bg-green-500 my-5 text-white text-center w-80 h-16 rounded-3xl shadow-green-900  hover:shadow-lg hover:transition duration-500 ease-in-out shadow-2xl hover:shadow-green-900 hover:bg-green-600 hover:w-96 text-lg hover:text-xl '>
-            Book a Free Call <PhoneIcon aria-hidden="true"className="h-8 cursor-pointer absolute top-4 right-9" />
-          </button>
-        </div>
-
+      <Tabs />
+      
+      <div className='text-center w-full mb-20'>
+        <button className='relative bg-green-500 my-5 text-white text-center w-80 h-16 rounded-3xl shadow-green-900  hover:shadow-lg hover:transition duration-500 ease-in-out shadow-2xl hover:shadow-green-900 hover:bg-green-600 hover:w-96 text-lg hover:text-xl '>
+          <p className=' mr-5'>Book a Free Call</p> <PhoneIcon aria-hidden="true"className="h-8 cursor-pointer absolute top-4 right-9" />
+        </button>
+      </div>
+      
+    <div className='w-2/3 mx-auto py-2 bg-zinc-300'>
+      <img src={FeaturedInLogo} />
+    </div>
 
  
      

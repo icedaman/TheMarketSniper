@@ -1,5 +1,10 @@
 import { useState } from 'react'
 import { Tab } from '@headlessui/react'
+import StateOfMarketLogo from '../assets/state-of-market.png'
+import OptEntryLogo from '../assets/optimum-entry.png'
+import MinLossLogo from '../assets/min-stop-loss.png'
+import TakeProfitLogo from '../assets/take-profit.png'
+import MaxRRRLogo from '../assets/max-rrr.png'
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
@@ -55,6 +60,9 @@ export default function Tabs() {
 
   return (
     <div className="w-full py-16 px-96">
+      <h5 className='pb-16 pt-10 text-4xl text-semibold overflow text-green-800 drop-shadow-lg shadow-black w-full text-center'>
+        The Hunt Volatility Funnel (HVF)
+      </h5>
       <Tab.Group>
         <Tab.List className="flex space-x-1 rounded-xl bg-green-900/20 p-1">
           {Object.keys(categories).map((category) => (
@@ -65,7 +73,7 @@ export default function Tabs() {
                   'w-full rounded-lg py-2.5 text-sm font-bold leading-5 p-2',
                   'ring-green-300/60 ring-offset-2 ring-offset-green-400 focus:outline-none focus:ring-2',
                   selected
-                    ? 'bg-green-300 text-zinc-500 shadow ring-green-300/60'
+                    ? 'bg-green-300 text-zinc-500 shadow ring-green-300/60 ring-2'
                     : 'text-green-800 hover:bg-green-300/[0.12] hover:text-green-500'
                 )
               }
@@ -80,14 +88,14 @@ export default function Tabs() {
               key={idx}
               className={classNames(
                 'rounded-xl bg-zinc-300 p-3',
-                'ring-green-300/60 ring-offset-2 ring-offset-green-400 focus:outline-none focus:ring-2'
+                'ring-green-300/60 ring-offset-2 ring-offset-green-400 focus:outline-none ring-2'
               )}
             >
-              <ul>
+              <ul className="p-3">
                 {tabs.map((tab) => (
                   <li
                     key={tab.id}
-                    className="relative rounded-md p-3 hover:bg-zinc-300"
+                    className="relative rounded-md p-3 hover:bg-zinc-400"
                   >
                     <h3 className="text-sm font-medium leading-5 text-zinc-900">
                       {tab.description}
@@ -99,6 +107,18 @@ export default function Tabs() {
           ))}
         </Tab.Panels>
       </Tab.Group>
+      <div>
+        <h5 className='pb-16 pt-10 text-xl text-semibold overflow text-green-800 drop-shadow-lg shadow-black w-full text-center'>
+          With the HVF Method know these parameters before even entering a trade:
+        </h5>
+        <div className="grid grid-cols-5 gap-6  mx-40">
+          <img src={StateOfMarketLogo} />
+          <img src={OptEntryLogo} />
+          <img src={MinLossLogo} />
+          <img src={TakeProfitLogo} />
+          <img src={MaxRRRLogo} />
+        </div>
+      </div>
     </div>
   )
 }
