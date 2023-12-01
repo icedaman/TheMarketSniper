@@ -5,6 +5,8 @@ import OptEntryLogo from '../assets/optimum-entry.png'
 import MinLossLogo from '../assets/min-stop-loss.png'
 import TakeProfitLogo from '../assets/take-profit.png'
 import MaxRRRLogo from '../assets/max-rrr.png'
+import { TrophyIcon, AcademicCapIcon, UsersIcon, LockClosedIcon, LockOpenIcon, ChartBarSquareIcon, PhoneIcon } from '@heroicons/react/24/outline'
+
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
@@ -15,6 +17,7 @@ export default function Tabs() {
     'Discover the Hunt Volatility Funnel (HVF) Method': [
       {
         id: 1,
+        imageURL: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftridius.co%2Fwp-content%2Fuploads%2F2020%2F04%2FStrategy-Services.jpg&f=1&nofb=1&ipt=813ddb11d58e7fa953673c09692a3fba6a2fac6ddf7e995204fb5626e6c85541&ipo=images',
         description: 'The Hunt Volatility Funnel (HVF) Method is a unique trading methodology that puts you in front of major expansive moves in the markets. It is a systemized approach that answers the key question – “What is the next most profitable trade?',
       },
       {
@@ -26,6 +29,7 @@ export default function Tabs() {
       {
         id: 1,
         description: 'The Hunt Volatility Funnel Method is superior to other trading methodologies in that it focuses on identifying key breakout trading opportunities, placing the trader in an immediate and often substantial positive position with considerably favorable reward to risk ratios throughout the trade.',
+        imageURL: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.moneymorning.com.au%2Fwp-content%2Fuploads%2F2016%2F06%2FBusinessman-having-questions.jpg&f=1&nofb=1&ipt=7cf9e7d9a9d529ac8348c327c65f308b2f0e6b54a624df127c5febfb4312e6d7&ipo=images',
       },
       {
         id: 2,
@@ -36,6 +40,7 @@ export default function Tabs() {
       {
         id: 1,
         description: 'Because the HVF Method provides a fully comprehensive framework for trading, our students benefit from peace of mind and confidence throughout each of their trades. Though often overlooked by others, developing a mindset that allows a sense of control and the ability to process information and make better decisions clearly, is pivotal. In fact it is essential to the psyche of being a successful trader.',
+        imageURL: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftuto4you.fr%2Fwp-content%2Fuploads%2F2021%2F04%2Fmindset-dentrepreneur.jpg&f=1&nofb=1&ipt=d761bcd41aa63e619be4ab78d1767cc534ca8530be59b0ffdc7486407cfa04e1&ipo=images',
       },
       {
         id: 2,
@@ -50,6 +55,7 @@ export default function Tabs() {
       {
         id: 1,
         description: 'Something very unique about the Hunt Volatility Funnel trading methodology is that it works equally well on all financial markets including forex, equities, and commodities as well as for cryptocurrencies.',
+        imageURL: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wealthplicity.com%2Fwp-content%2Fuploads%2F2020%2F10%2FiStock-1212638642.jpg&f=1&nofb=1&ipt=02101e52ccd59c80f06d02cced39fdebfabce8dd404ab6545a8a609941939c91&ipo=images',
       },
       {
         id: 2,
@@ -79,6 +85,24 @@ export default function Tabs() {
               }
             >
               {category}
+            </Tab>
+          ))}
+        </Tab.List>
+        <Tab.List className="flex space-x-1 rounded-xl bg-green-900/20 p-1">
+          {Object.values(categories).map((category) => (
+            <Tab
+              key={category}
+              className={({ selected }) =>
+                classNames(
+                  'w-full rounded-lg py-2.5 text-sm font-bold leading-5 p-2',
+                  'ring-green-300/60 ring-offset-2 ring-offset-green-400 focus:outline-none focus:ring-2',
+                  selected
+                    ? 'bg-green-300 text-zinc-500 shadow ring-green-300/60 ring-2'
+                    : 'text-green-800 hover:bg-green-300/[0.12] hover:text-green-500'
+                )
+              }
+            >
+              {category.map(cat => <img src={cat.imageURL} />)}
             </Tab>
           ))}
         </Tab.List>
@@ -119,6 +143,7 @@ export default function Tabs() {
           <img src={MaxRRRLogo} />
         </div>
       </div>
+      
     </div>
   )
 }
