@@ -66,7 +66,7 @@ export default function Tabs() {
 
   return (
     <div className="w-full py-16 px-96">
-      <h5 className='pb-16 pt-10 text-4xl text-semibold overflow text-green-800 drop-shadow-lg shadow-black w-full text-center'>
+      <h5 className='pb-16 pt-10 text-4xl text-semibold overflow text-green-400 drop-shadow-lg shadow-black w-full text-center [text-shadow:1px_1px_1px_#000]'>
         The Hunt Volatility Funnel (HVF)
       </h5>
       <Tab.Group>
@@ -89,9 +89,10 @@ export default function Tabs() {
           ))}
         </Tab.List>
         <Tab.List className="flex space-x-1 rounded-xl bg-green-900/20 p-1">
-          {Object.values(categories).map((category) => (
-            <Tab
-              key={category}
+          {Object.values(categories).map((category, idx) => (
+            <Tab 
+              disabled
+              key={idx}
               className={({ selected }) =>
                 classNames(
                   'w-full rounded-lg py-2.5 text-sm font-bold leading-5 p-2',
