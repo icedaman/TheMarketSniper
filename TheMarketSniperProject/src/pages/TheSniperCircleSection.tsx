@@ -3,7 +3,7 @@ import MainLogo from '../assets/the-sniper-circle.png'
 export default function TheSniperCircleSection() {
   return (
     <div className="w-full text-center my-10 bg-zinc-300 py-10">
-      <h1 className='h-fit py-4 text-5xl overflow text-green-500 drop-shadow-lg shadow-black w-full [text-shadow:1px_1px_2px_#000]'>
+      <h1 className='h-fit py-4 text-5xl overflow text-green-500 drop-shadow-lg shadow-black w-full [text-shadow:1px_1px_3px_#000]'>
         For Traders By Traders!
       </h1>
       <div className="text-center my-4">
@@ -22,7 +22,7 @@ export default function TheSniperCircleSection() {
           <iframe src="https://www.youtube.com/embed/9c_yqhKzfxE?feature=oembed" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
         </div>
         <div className=' mx-60 pt-2'>
-          <h5 className='text-lg overflow font-semibold text-zinc-900 leading-7 bg-zinc-400 rounded-xl p-2'>
+          <h5 className='text-lg overflow font-semibold text-zinc-900 leading-7 bg-zinc-400 rounded-xl p-4'>
             Our unique community is comprised of people from all over the world, all at different points of their trading journey. Ranging from complete beginners to many highly trained and focused traders, The Market Sniper community is a rich place where traders interact 24/7/365. The traders in the community bring varying experiences and background histories, yet all implement the same powerful trading strategy – the Hunt Volatility Funnel Method. This is an immensely powerful asset! Inside the exclusive  Sniper Circle platform, our members are able to share ideas, analyze trades together, get instant feedback, receive daily updates on different markets, attend regular educational webinars, be held accountable for trading decisions, challenge each other to greatness, and encourage one another in the (often lonely) world of trading financial markets.
           </h5>
         </div>

@@ -6,6 +6,8 @@ import MinLossLogo from '../assets/min-stop-loss.png'
 import TakeProfitLogo from '../assets/take-profit.png'
 import MaxRRRLogo from '../assets/max-rrr.png'
 
+import { useRef, useCallback, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
@@ -62,9 +64,15 @@ export default function Tabs() {
     ],
   })
 
+  const { ref, inView } = useInView();
+
+  useEffect(() =>{
+    console.log('yo', inView)
+  }, [inView])
+
   return (
-    <div className="w-full py-16 px-96">
-      <h5 className='pb-16 pt-10 text-5xl text-semibold overflow text-green-400 drop-shadow-lg shadow-black w-full text-center [text-shadow:1px_1px_2px_#000]'>
+    <div ref={ref} className="w-full py-16 px-96 animation: wave 2s linear infinite;">
+      <h5 className='pb-16 pt-10 text-5xl text-semibold overflow text-green-400 drop-shadow-lg shadow-black w-full text-center [text-shadow:1px_1px_3px_#000]'>
         The Hunt Volatility Funnel (HVF)
       </h5>
       <Tab.Group>
@@ -142,7 +150,6 @@ export default function Tabs() {
           <img src={MaxRRRLogo} />
         </div>
       </div>
-      
     </div>
   )
 }

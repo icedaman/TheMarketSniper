@@ -1,18 +1,10 @@
-import { Link } from 'react-router-dom'
 import Video from '../ReusableComponents/Video'
 import TMSLogo from '../assets/Web2-Logo-120TMS.png'
-import TradingDaysLogo from '../assets/trading_days_banner.jpg'
-import MarketsLogo from '../assets/markets_thumbnail.jpg'
-import HVFLogo from '../assets/BullVsBearWallpaper.jpg'
-import MainLogo from '../assets/main-logo.png'
-import SmallCard from '../ReusableComponents/SmallCard'
-import { TrophyIcon, AcademicCapIcon, UsersIcon, LockClosedIcon, LockOpenIcon, ChartBarSquareIcon, PhoneIcon } from '@heroicons/react/24/outline'
-import Navbar from '../Navbar/Navbar'
+import { TrophyIcon, ChartBarSquareIcon, PhoneIcon } from '@heroicons/react/24/outline'
 import Tabs from '../ReusableComponents/Tabs'
 import FrancisDetails from './FrancisDetails'
 import FeaturedInLogo from '../assets/featuredIn.png'
 import TheSniperCircleSection from './TheSniperCircleSection'
-
 
 export default function LandingPage() {
   return (
@@ -34,31 +26,31 @@ export default function LandingPage() {
           </div>
         </nav>
         <section className='px-36 pt-20 text-center'>
-            <h1 className='h-fit py-4 text-5xl overflow text-green-500 drop-shadow-lg shadow-black w-full [text-shadow:1px_1px_2px_#000]'>
+            <h1 className='h-fit py-4 text-5xl overflow text-green-500 drop-shadow-lg shadow-black w-full [text-shadow:1px_1px_4px_#000]'>
               Everything You Need To Become A Successful Lifestyle Trader
             </h1>
-            <h5 className='h-fit py-10 pt-2 text-xl overflow text-white drop-shadow-lg shadow-black w-full text-center [text-shadow:1px_1px_2px_#000]'>
+            <h5 className='h-fit py-10 pt-2 text-xl overflow text-white drop-shadow-lg shadow-black w-full text-center [text-shadow:1px_1px_4px_#000]'>
               Have More Freedom – Trade Confidently – Increase Your Income
             </h5>
-            <h5 className='h-fit pt-32 pb-6 text-lg overflow text-white drop-shadow-lg shadow-black w-full text-center [text-shadow:1px_1px_2px_#000]'>
+            <h5 className='h-fit pt-32 pb-6 text-lg overflow text-white drop-shadow-lg shadow-black w-full text-center [text-shadow:1px_1px_4px_#000]'>
             For Traders By Traders!      This is how we can help you today:
             </h5>
         </section>
         
         <div className='w-1/2 mx-auto my-4 flex text-center'>
           <div className='w-1/2 mr-20 rounded-lg'>
-            <button className='relative  bg-zinc-700 my-5 text-white text-center w-72 h-14 rounded-3xl shadow-zinc-900  hover:shadow-lg hover:transition duration-500 ease-in-out shadow-2xl hover:shadow-zinc-900 hover:bg-zinc-600 hover:w-80 text-lg hover:text-xl '>
+            <button className='relative  bg-zinc-700 my-5 text-white text-center w-72 h-14 rounded-3xl shadow-zinc-900  hover:shadow-lg hover:transition duration-700 ease-in-out shadow-2xl hover:shadow-zinc-900 hover:bg-zinc-600 hover:w-80 text-lg hover:text-xl '>
               <p className=' mr-5'>Free Trading Course</p> <ChartBarSquareIcon aria-hidden="true"className="h-8 cursor-pointer absolute top-3 right-4" />
             </button>
           </div>
           <div className='w-1/2 rounded-lg'>
-            <button className='relative  bg-zinc-700 my-5 text-white text-center w-72 h-14 rounded-3xl shadow-zinc-900  hover:shadow-lg hover:transition duration-500 ease-in-out shadow-2xl hover:shadow-zinc-900 hover:bg-zinc-600 hover:w-80 text-xl hover:text-2xl '>
+            <button className='relative  bg-zinc-700 my-5 text-white text-center w-72 h-14 rounded-3xl shadow-zinc-900  hover:shadow-lg hover:transition duration-700 ease-in-out shadow-2xl hover:shadow-zinc-900 hover:bg-zinc-600 hover:w-80 text-xl hover:text-2xl '>
               <p className=' mr-5'>Results</p> <TrophyIcon aria-hidden="true"className="h-8 cursor-pointer absolute top-3 right-12" />
             </button>
           </div>
         </div>
         <div className='  w-1/4 mx-auto my-4 text-center'>
-          <button className='relative bg-green-500 my-5 text-white text-center w-72 h-14 rounded-3xl shadow-green-900  hover:shadow-lg hover:transition duration-500 ease-in-out shadow-2xl hover:shadow-green-900 hover:bg-green-600 hover:w-80 text-lg hover:text-xl '>
+          <button className='relative bg-green-500 my-5 text-white text-center w-72 h-14 rounded-3xl shadow-green-900  hover:shadow-lg hover:transition duration-700 ease-in-out shadow-2xl hover:shadow-green-900 hover:bg-green-600 hover:w-80 text-lg hover:text-xl '>
             <p className=' mr-5'>Book a Free Call</p> <PhoneIcon aria-hidden="true"className="h-8 cursor-pointer absolute top-3 right-7" />
           </button>
         </div>
@@ -67,7 +59,7 @@ export default function LandingPage() {
       <FrancisDetails />
 
       <Tabs />
-      
+            
       <TheSniperCircleSection />
       
       <div className='text-center w-full mb-20'>
@@ -79,8 +71,7 @@ export default function LandingPage() {
     <div className='w-2/3 mx-auto py-2 bg-zinc-300'>
       <img src={FeaturedInLogo} />
     </div>
-    
-      
+          
     <div className='w-full mx-auto py-6 bg-zinc-900 text-center'>
       <a className='text-zinc-300 font-semibold transition-all ease-in-out hover:border-b-4 px-7 text-lg hover:text-xl' href='#'>Blog</a>
       <a className='text-zinc-300 font-semibold transition-all ease-in-out hover:border-b-4 px-7 text-lg hover:text-xl' href='#'>Press Mentions</a>
@@ -89,11 +80,7 @@ export default function LandingPage() {
       <a className='text-zinc-300 font-semibold transition-all ease-in-out hover:border-b-4 px-7 text-lg hover:text-xl' href='#'>Privacy Policy</a>
     </div>
 
- 
      
-
-
-
       {/* <div className=' text-5xl overflow text-green-500 drop-shadow-lg shadow-black w-fit text-center'>
         <h1 className='h-fit text-5xl overflow text-green-500 drop-shadow-lg shadow-black w-full '>
           Everything You Need To Become A Successful Lifestyle Trader
@@ -127,8 +114,8 @@ export default function LandingPage() {
             <SmallCard icon={<TrophyIcon aria-hidden="true" />} title={"results"} image={MaxRRRLogo} description={"Watch Previous Streams"} />
           </Link>
         </div>
-      </div>         */}
-        
+      </div>         
+    */}    
     </>
   )
 }
