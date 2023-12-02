@@ -11,6 +11,7 @@ import Navbar from '../Navbar/Navbar'
 import Tabs from '../ReusableComponents/Tabs'
 import FrancisDetails from './FrancisDetails'
 import FeaturedInLogo from '../assets/featuredIn.png'
+import TheSniperCircleSection from './TheSniperCircleSection'
 
 
 export default function LandingPage() {
@@ -66,6 +67,8 @@ export default function LandingPage() {
       <FrancisDetails />
 
       <Tabs />
+      
+      <TheSniperCircleSection />
       
       <div className='text-center w-full mb-20'>
         <button className='relative bg-green-500 my-5 text-white text-center w-80 h-16 rounded-3xl shadow-green-900  hover:shadow-lg hover:transition duration-500 ease-in-out shadow-2xl hover:shadow-green-900 hover:bg-green-600 hover:w-96 text-lg hover:text-xl '>

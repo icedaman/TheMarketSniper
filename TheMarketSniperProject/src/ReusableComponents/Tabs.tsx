@@ -5,8 +5,6 @@ import OptEntryLogo from '../assets/optimum-entry.png'
 import MinLossLogo from '../assets/min-stop-loss.png'
 import TakeProfitLogo from '../assets/take-profit.png'
 import MaxRRRLogo from '../assets/max-rrr.png'
-import { TrophyIcon, AcademicCapIcon, UsersIcon, LockClosedIcon, LockOpenIcon, ChartBarSquareIcon, PhoneIcon } from '@heroicons/react/24/outline'
-
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
@@ -66,11 +64,11 @@ export default function Tabs() {
 
   return (
     <div className="w-full py-16 px-96">
-      <h5 className='pb-16 pt-10 text-4xl text-semibold overflow text-green-400 drop-shadow-lg shadow-black w-full text-center [text-shadow:1px_1px_1px_#000]'>
+      <h5 className='pb-16 pt-10 text-5xl text-semibold overflow text-green-400 drop-shadow-lg shadow-black w-full text-center [text-shadow:1px_1px_2px_#000]'>
         The Hunt Volatility Funnel (HVF)
       </h5>
       <Tab.Group>
-        <Tab.List className="flex space-x-1 rounded-xl bg-green-900/20 p-1">
+        <Tab.List className="flex space-x-1 bg-zinc-600/20 p-1">
           {Object.keys(categories).map((category) => (
             <Tab
               key={category}
@@ -88,7 +86,7 @@ export default function Tabs() {
             </Tab>
           ))}
         </Tab.List>
-        <Tab.List className="flex space-x-1 rounded-xl bg-green-900/20 p-1">
+        <Tab.List className="flex space-x-1 bg-zinc-600/20 p-1">
           {Object.values(categories).map((category, idx) => (
             <Tab 
               disabled
@@ -112,7 +110,7 @@ export default function Tabs() {
             <Tab.Panel
               key={idx}
               className={classNames(
-                'rounded-xl bg-zinc-300 p-3',
+                'rounded-xl bg-zinc-200 p-3',
                 'ring-green-300/60 ring-offset-2 ring-offset-green-400 focus:outline-none ring-2'
               )}
             >
@@ -133,7 +131,7 @@ export default function Tabs() {
         </Tab.Panels>
       </Tab.Group>
       <div>
-        <h5 className='pb-16 pt-10 text-xl text-semibold overflow text-green-800 drop-shadow-lg shadow-black w-full text-center'>
+        <h5 className='pb-16 pt-10 text-xl text-bold overflow text-zinc-900 drop-shadow-lg shadow-black w-full text-center'>
           With the HVF Method know these parameters before even entering a trade:
         </h5>
         <div className="grid grid-cols-5 gap-6  mx-40">
