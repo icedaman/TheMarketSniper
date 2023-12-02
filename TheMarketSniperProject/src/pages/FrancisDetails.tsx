@@ -1,4 +1,3 @@
-import FrancisImg from '../assets/francis2_thumbnail.jpg'
 import FrancisCard from './FrancisCard'
 
 export default function FrancisDetails() {
