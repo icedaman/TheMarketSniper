@@ -2,28 +2,28 @@ import FrancisAvatar from '../assets/francisAvatar.jpg'
 
 export default function FrancisCard() {
   return (
-            <div className="relative w-full group max-w-md min-w-0 mx-auto mt-6 mb-6 break-words bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-xl transition duration-500 ease-in-out shadow-2xl hover:shadow-green-500 rounded-2xl transform hover:scale-90">
+            <div className="relative w-full group max-w-md min-w-0 mx-auto mt-6 mb-6 break-words bg-white border shadow-2xl dark:bg-zinc-800 dark:border-green-700 md:max-w-sm rounded-xl transition duration-500 ease-in-out shadow-2xl hover:shadow-green-500 rounded-2xl transform hover:scale-90">
                 <div className="pb-6">
                     <div className="flex flex-wrap justify-center">
                         <div className="flex justify-center w-full">
                             <div className="relative">
-                                <img src={FrancisAvatar} className="dark:shadow-xl border-white dark:border-gray-800 rounded-full align-middle border-8 absolute -m-16 -ml-18 lg:-ml-16 max-w-[150px]" />
+                                <img src={FrancisAvatar} className="dark:shadow-xl border-white dark:border-zinc-800 rounded-full align-middle border-8 absolute -m-16 -ml-18 lg:-ml-16 max-w-[150px]" />
                             </div>
                         </div>
                     </div>
                     <div className="mt-2 mt-20 text-center">
-                        <h3 className="mb-1 text-2xl font-bold leading-normal text-gray-700 dark:text-gray-300">Francis Hunt</h3>
+                        <h3 className="mb-1 text-2xl font-bold leading-normal  text-zinc-300">Francis Hunt</h3>
                         <div className="flex flex-row justify-center w-full mx-auto space-x-2 text-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-zinc-400" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
                             </svg>
-                            <div className="text-sm font-bold tracking-wide text-gray-600 dark:text-gray-300 font-mono text-xl">Trader / Technical Analyst</div>
+                            <div className="text-sm font-bold tracking-wide text-zinc-300 font-mono text-xl">Trader / Technical Analyst</div>
                         </div>
                         <div className="w-full text-center">
                             <div className="flex justify-center pt-8 pb-0 lg:pt-4">
                                 <div className="flex space-x-2">
                                 <a
-                                        className="p-1 -m-1 text-gray-400 hover:text-green-500 focus:outline-none focus-visible:ring-2 ring-primary"
+                                        className="p-1 -m-1 text-zinc-400 hover:text-green-500 focus:outline-none focus-visible:ring-2 ring-primary"
                                         href="https://www.youtube.com/@TheMarketSniper1"
                                         rel="noopener"
                                         aria-label="Francis Hunt on Youtube"
@@ -36,7 +36,7 @@ export default function FrancisCard() {
                                         </svg>
                                     </a>
                                     <a
-                                        className="p-1 -m-1 text-gray-400 hover:text-green-500 focus:outline-none focus-visible:ring-2 ring-primary"
+                                        className="p-1 -m-1 text-zinc-400 hover:text-green-500 focus:outline-none focus-visible:ring-2 ring-primary"
                                         href="https://twitter.com/themarketsniper" 
                                         rel="noopener"
                                         aria-label="Francis Hunt on Twitter"
@@ -52,10 +52,10 @@ export default function FrancisCard() {
                             </div>
                         </div>
                     </div>
-                    <div className="pt-6 mx-6 mt-6 text-center border-t border-gray-200 dark:border-gray-700/50">
+                    <div className="pt-6 mx-6 mt-6 text-center border-t border-zinc-200 dark:border-zinc-700/50">
                         <div className="flex flex-wrap justify-center">
                             <div className="w-full px-6">
-                                <p className="mb-4 font-light leading-relaxed text-gray-600 dark:text-gray-400">
+                                <p className="mb-4 leading-relaxed text-zinc-300 font-semibold">
                                     Francis is an experienced trader with multiple decades of experience, that not only survived but thrived during multiple crashes, bear and bull cycles.
                                 </p>
                             </div>

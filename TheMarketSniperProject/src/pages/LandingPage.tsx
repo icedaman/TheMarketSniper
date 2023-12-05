@@ -26,7 +26,7 @@ export default function LandingPage() {
           </div>
         </nav>
         <section className='px-36 pt-20 text-center'>
-            <h1 className='h-fit py-4 text-5xl overflow text-green-500 drop-shadow-lg shadow-black w-full [text-shadow:1px_1px_4px_#000]'>
+            <h1 className='h-fit py-4 text-5xl overflow text-green-500 drop-shadow-lg shadow-black w-full [text-shadow:1px_1px_4px_#000] font-semibold'>
               Everything You Need To Become A Successful Lifestyle Trader
             </h1>
             <h5 className='h-fit py-10 pt-2 text-xl overflow text-white drop-shadow-lg shadow-black w-full text-center [text-shadow:1px_1px_4px_#000]'>
@@ -39,19 +39,19 @@ export default function LandingPage() {
         
         <div className='w-1/2 mx-auto my-4 flex text-center'>
           <div className='w-1/2 mr-20 rounded-lg'>
-            <button className='relative  bg-zinc-700 my-5 text-white text-center w-72 h-14 rounded-3xl shadow-zinc-900  hover:shadow-lg hover:transition duration-700 ease-in-out shadow-2xl hover:shadow-zinc-900 hover:bg-zinc-600 hover:w-80 text-lg hover:text-xl '>
-              <p className=' mr-5'>Free Trading Course</p> <ChartBarSquareIcon aria-hidden="true"className="h-8 cursor-pointer absolute top-3 right-4" />
+            <button className='relative  bg-zinc-700 my-5 text-white text-center w-72 h-14 rounded-3xl shadow-zinc-900  hover:shadow-lg duration-300 ease-in-out shadow-2xl hover:shadow-zinc-900 hover:bg-zinc-600 hover:w-80 text-lg hover:text-xl '>
+              <p className='mr-5 font-semibold'>Free Trading Course</p> <ChartBarSquareIcon aria-hidden="true"className="h-8 cursor-pointer absolute top-3 right-4" />
             </button>
           </div>
           <div className='w-1/2 rounded-lg'>
-            <button className='relative  bg-zinc-700 my-5 text-white text-center w-72 h-14 rounded-3xl shadow-zinc-900  hover:shadow-lg hover:transition duration-700 ease-in-out shadow-2xl hover:shadow-zinc-900 hover:bg-zinc-600 hover:w-80 text-xl hover:text-2xl '>
-              <p className=' mr-5'>Results</p> <TrophyIcon aria-hidden="true"className="h-8 cursor-pointer absolute top-3 right-12" />
+            <button className='relative  bg-zinc-700 my-5 text-white text-center w-72 h-14 rounded-3xl shadow-zinc-900  hover:shadow-lg duration-300 ease-in-out shadow-2xl hover:shadow-zinc-900 hover:bg-zinc-600 hover:w-80 text-xl hover:text-2xl '>
+              <p className='mr-5 font-semibold'>Results</p> <TrophyIcon aria-hidden="true"className="h-8 cursor-pointer absolute top-3 right-12" />
             </button>
           </div>
         </div>
-        <div className='  w-1/4 mx-auto my-4 text-center'>
-          <button className='relative bg-green-500 my-5 text-white text-center w-72 h-14 rounded-3xl shadow-green-900  hover:shadow-lg hover:transition duration-700 ease-in-out shadow-2xl hover:shadow-green-900 hover:bg-green-600 hover:w-80 text-lg hover:text-xl '>
-            <p className=' mr-5'>Book a Free Call</p> <PhoneIcon aria-hidden="true"className="h-8 cursor-pointer absolute top-3 right-7" />
+        <div className='  w-1/4 mx-auto my-4 text-center mt-10'>
+          <button className='relative bg-green-500 my-5 text-white text-center w-80 h-16 rounded-3xl shadow-green-900  hover:shadow-lg  shadow-2xl hover:shadow-green-900 hover:bg-green-600 hover:w-96 text-lg hover:text-xl duration-300 ease-in-out'>
+            <p className='mr-5 font-semibold'>Book a Free Call</p> <PhoneIcon aria-hidden="true"className="h-8 cursor-pointer absolute top-4 right-10" />
           </button>
         </div>
       </div>  
@@ -63,8 +63,8 @@ export default function LandingPage() {
       <TheSniperCircleSection />
       
       <div className='text-center w-full mb-20'>
-        <button className='relative bg-green-500 my-5 text-white text-center w-80 h-16 rounded-3xl shadow-green-900  hover:shadow-lg hover:transition duration-500 ease-in-out shadow-2xl hover:shadow-green-900 hover:bg-green-600 hover:w-96 text-lg hover:text-xl '>
-          <p className=' mr-5'>Book a Free Call</p> <PhoneIcon aria-hidden="true"className="h-8 cursor-pointer absolute top-4 right-9" />
+        <button className='relative bg-green-500 my-5 text-white text-center w-80 h-16 rounded-3xl shadow-green-900  hover:shadow-lg  shadow-2xl hover:shadow-green-900 hover:bg-green-600 hover:w-96 text-lg hover:text-xl duration-300 ease-in-out'>
+          <p className='mr-5 font-semibold'>Book a Free Call</p> <PhoneIcon aria-hidden="true"className="h-8 cursor-pointer absolute top-4 right-9" />
         </button>
       </div>
       
