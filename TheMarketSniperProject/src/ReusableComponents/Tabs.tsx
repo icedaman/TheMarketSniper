@@ -72,7 +72,7 @@ export default function Tabs() {
 
   return (
     <div ref={ref} className="w-full py-10 px-96 animation: wave 2s linear infinite;">
-      <h5 className='pb-16 pt-10 text-5xl font-semibold overflow text-green-400 drop-shadow-lg shadow-black w-full text-center [text-shadow:1px_1px_3px_#000]'>
+      <h5 className='pb-16 pt-10 text-5xl font-semibold overflow text-green-500 drop-shadow-lg shadow-black w-full text-center [text-shadow:1px_1px_3px_#000]'>
         The Hunt Volatility Funnel (HVF)
       </h5>
       <Tab.Group>
