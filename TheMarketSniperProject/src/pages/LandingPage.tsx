@@ -26,7 +26,7 @@ export default function LandingPage() {
           </div>
         </nav>
         <section className='px-36 pt-20 text-center'>
-            <h1 className='h-fit py-4 text-5xl overflow text-green-500 drop-shadow-lg shadow-black w-full [text-shadow:1px_1px_4px_#000] font-semibold'>
+            <h1 className='h-fit py-4 text-5xl overflow text-green-500 drop-shadow-lg shadow-black w-full [text-shadow:1px_1px_4px_#000] font-bold'>
               Everything You Need To Become A Successful Lifestyle Trader
             </h1>
             <h5 className='h-fit py-10 pt-2 text-xl overflow text-white drop-shadow-lg shadow-black w-full text-center [text-shadow:1px_1px_4px_#000]'>

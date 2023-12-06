@@ -6,7 +6,7 @@ export default {
       // that is animation class
       animation: {
         fade: 'fadeOut 1.5s ease-in-out',
-        fade2: 'fadeOut 3s ease-in-out',
+        fade2: 'fadeOut 2s ease-in-out',
       },
 
       // that is actual animation
