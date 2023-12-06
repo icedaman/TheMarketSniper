@@ -2,7 +2,7 @@ import FrancisAvatar from '../assets/francisAvatar.jpg'
 
 export default function FrancisCard() {
   return (
-            <div className="relative w-full group max-w-md min-w-0 mx-auto mt-6 mb-6 break-words bg-white border shadow-2xl dark:bg-zinc-800 dark:border-green-700 md:max-w-sm rounded-xl transition duration-500 ease-in-out shadow-2xl hover:shadow-green-500 rounded-2xl transform hover:scale-90">
+            <div className="relative w-full group max-w-md min-w-0 mx-auto mt-6 mb-6 break-words bg-white border shadow-2xl dark:bg-zinc-800 dark:border-green-700 md:max-w-sm rounded-xl transition duration-500 ease-in-out shadow-2xl hover:shadow-green-500 rounded-2xl transform hover:scale-125">
                 <div className="pb-6">
                     <div className="flex flex-wrap justify-center">
                         <div className="flex justify-center w-full">
