@@ -8,6 +8,8 @@ import MaxRRRLogo from '../assets/max-rrr.png'
 
 import { useRef, useCallback, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+import { cn } from '../utilities/passingCssPropsasObj'
+
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
@@ -65,16 +67,25 @@ export default function Tabs() {
   })
 
   const { ref, inView } = useInView();
-
+  const [currentColor, setcurrentColor] = useState<string>()
+  
   useEffect(() =>{
-    console.log('yo', inView)
-  }, [inView])
+    if(inView){
+      setcurrentColor('bg-blue-400')
+    }else{
+      setcurrentColor('bg-pink-400')
+    }
+  }, [inView, currentColor])
 
   return (
-    <div ref={ref} className="w-full py-10 px-96 animation: wave 2s linear infinite;">
+    <div ref={ref} className={cn(
+      "w-full py-10 px-96 animation: wave 2s linear infinite ",
+      inView && "animate-fade"
+    )}>
       <h5 className='pb-16 pt-10 text-5xl font-semibold overflow text-green-500 drop-shadow-lg shadow-black w-full text-center [text-shadow:1px_1px_3px_#000]'>
         The Hunt Volatility Funnel (HVF)
       </h5>
+      {/* <h1 className={`${currentColor}`}>TEsting</h1> */}
       <Tab.Group>
         <Tab.List className="flex space-x-1 bg-zinc-600/20 p-1">
           {Object.keys(categories).map((category) => (

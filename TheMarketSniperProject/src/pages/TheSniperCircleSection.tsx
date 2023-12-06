@@ -1,8 +1,15 @@
+import { useInView } from 'react-intersection-observer';
 import MainLogo from '../assets/the-sniper-circle.png'
+import { cn } from '../utilities/passingCssPropsasObj';
 
 export default function TheSniperCircleSection() {
+  const { ref, inView } = useInView();
+  
   return (
-    <div className="w-full text-center my-10 bg-zinc-300 py-10">
+    <div ref={ref} className={cn(
+      "w-full text-center my-10 bg-zinc-300 py-10",
+      inView && "animate-fade"
+    )}>
       <h1 className='h-fit py-4 text-5xl font-semibold overflow text-green-500 drop-shadow-lg shadow-black w-full [text-shadow:1px_1px_3px_#000]'>
         For Traders By Traders!
       </h1>

@@ -3,7 +3,7 @@ import FrancisCard from './FrancisCard'
 export default function FrancisDetails() {
 
   return (
-    <div className='px-10 py-10 w-full bg-zinc-300'>
+    <div className='px-10 py-10 w-full bg-zinc-300 animate-fade2'>
       <section className='px-36 pb-10 text-center'>
         <h1 className='h-fit py-4 text-5xl overflow text-green-500 drop-shadow-lg shadow-black w-full [text-shadow:1px_1px_2px_#000] font-semibold'>
           Meet Francis Hunt – Trader, Technical Analyst & Teacher
