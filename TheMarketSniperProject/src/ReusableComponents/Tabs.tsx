@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Tab } from '@headlessui/react'
 import StateOfMarketLogo from '../assets/state-of-market.png'
 import OptEntryLogo from '../assets/optimum-entry.png'
@@ -6,7 +5,7 @@ import MinLossLogo from '../assets/min-stop-loss.png'
 import TakeProfitLogo from '../assets/take-profit.png'
 import MaxRRRLogo from '../assets/max-rrr.png'
 
-import { useRef, useCallback, useEffect } from 'react';
+import { useState, useRef, useCallback, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { cn } from '../utilities/passingCssPropsasObj'
 
